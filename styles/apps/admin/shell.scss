@@ -1,0 +1,60 @@
+.admin {
+  &-wrapper {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  &-main {
+    width: calc(100% - 175px);
+    margin-left: 175px;
+  }
+  &-sidebar {
+    position: fixed;
+    width: 175px;
+    background-color: var(--teal-900) ;
+    height: 100%;
+    top: 0;
+    .logo {
+      margin-top: -30px;
+      padding: 2px;
+      width: 100%;
+      img {
+        max-width: 100%;
+      }
+    }
+    .links {
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          display: block;
+          list-style: none;
+          width: 100%;
+          a{
+            color:var(--cyan-50);
+            padding: 10px 15px;
+            display: block;
+            width: 100%;
+
+            &:hover{
+              color: var(--teal-1000);
+              background-color: #e4e9e871;
+            }
+            i{
+              margin-right: 8px;
+              margin-top: 0px;
+              float: left;
+            }
+            &.logout{
+              color: var(--teal-200);
+            }
+          }
+        }
+      }
+    }
+  }
+  &-page{
+    padding:1px 15px 1px 15px;
+  }
+}
